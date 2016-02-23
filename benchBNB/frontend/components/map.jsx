@@ -9,6 +9,7 @@ var Map = React.createClass({
     }
   },
 
+
   componentDidMount: function () {
     this.benchToken = BenchStore.addListener(this._onChange);
 
