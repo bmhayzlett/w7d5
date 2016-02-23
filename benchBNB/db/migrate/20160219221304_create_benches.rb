@@ -3,6 +3,7 @@ class CreateBenches < ActiveRecord::Migration
     create_table :benches do |t|
       t.float :lat, null: false
       t.float :lon, null: false
+      t.string :description, null: false
 
       t.timestamps null: false
     end

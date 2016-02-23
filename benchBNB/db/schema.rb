@@ -14,10 +14,11 @@
 ActiveRecord::Schema.define(version: 20160219221304) do
 
   create_table "benches", force: :cascade do |t|
-    t.float    "lat",        null: false
-    t.float    "lon",        null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.float    "lat",         null: false
+    t.float    "lon",         null: false
+    t.string   "description", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

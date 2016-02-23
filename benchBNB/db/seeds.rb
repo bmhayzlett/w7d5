@@ -1,3 +1,4 @@
+require 'faker'
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
@@ -8,5 +9,6 @@
 
 15.times do
   Bench.create!(lat: Random.new.rand(37.748421..37.801928),
-    lon: Random.new.rand(-122.509740..-122.389069))
+    lon: Random.new.rand(-122.509740..-122.389069),
+    description: Faker::Hacker.say_something_smart)
 end

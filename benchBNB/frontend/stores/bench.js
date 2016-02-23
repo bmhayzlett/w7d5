@@ -21,4 +21,6 @@ BenchStore.all = function() {
   return _benches.slice(0);
 };
 
+window.BenchStore = BenchStore;
+
 module.exports = BenchStore;

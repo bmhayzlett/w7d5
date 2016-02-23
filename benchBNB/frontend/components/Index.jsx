@@ -1,5 +1,6 @@
 var React = require('react');
-var BenchStore = require('../stores/bench')
+var BenchStore = require('../stores/bench');
+var ApiUtil = require('../util/api_util');
 
 var Index = React.createClass({
   getInitialState: function () {
@@ -25,5 +26,7 @@ var Index = React.createClass({
   }
 
 });
+
+window.Index = Index
 
 module.exports = Index;
